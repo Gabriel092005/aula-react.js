@@ -1,11 +1,11 @@
 import './App.css'
+import { Users } from './page/users'
 
-function App() {
+export function App() {
+
   return (
     <>
-     <h1>Hellow</h1>
+      <Users></Users>
     </>
   )
 }
-
-export default App
