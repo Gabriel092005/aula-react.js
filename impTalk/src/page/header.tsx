@@ -1,4 +1,5 @@
-import { Heart } from "lucide-react";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { DollarSign, Heart } from "lucide-react";
 
 
   export function Header() {
@@ -6,14 +7,19 @@ import { Heart } from "lucide-react";
           <>
              <div>
               <header className="">
-                  <div className="flex gap-1 items-center justify-center bg-blue-400  h-20">
-                       <div className="flex items-center gap-1">
-                        <strong className="text-white">SOCIALWEB</strong>
+                  <div className="flex gap-1 items-center  bg-black  h-20">
+                       <div className="flex items-center">
+                        <strong className="text-white">AccountSoft</strong>
                         <div>
-                              <Heart className="text-red-500"></Heart>
+                              <DollarSign className="text-white"></DollarSign>
                         </div>
                       </div>
                   </div>
+                   <div className="flex items-center">
+                       <Avatar>
+                           <AvatarImage  src="https://github.com/Gabriel092005/avatar"></AvatarImage>
+                       </Avatar>
+                   </div>
               </header>
           </div>
           </>
