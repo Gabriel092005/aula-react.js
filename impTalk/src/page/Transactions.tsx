@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
 import { Plus } from "lucide-react";
+import { CreateNewTransactionsDialog } from "./createTransactionDialog";
 
 
 
@@ -15,20 +17,20 @@ export function Transactions(){
                                  <span className="text-[1rem]">Histórico de todas as transações em tempo real.</span>
                           </div>
                           <div >
-                               <Button className="p-1">
-                                 <Plus/>
-                                    Nova Transação
-                                </Button>
+                              <Dialog>
+                                <DialogTrigger asChild>
+                                      <Button className="p-1">
+                                        <Plus/>
+                                         Nova Transação
+                                       </Button>
+                                </DialogTrigger>
+                                <CreateNewTransactionsDialog></CreateNewTransactionsDialog>
+                              </Dialog>
                           </div>
                       </div>
                   </header>
               </div>
-               <div className=" flex items-center gap-7 ">
-                  <Card>
-                    
-                  </Card>
 
-               </div>
           </div>
      )
 }

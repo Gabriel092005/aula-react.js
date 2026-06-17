@@ -12,5 +12,16 @@ export function getInialts(name:string){
     return initials
   }
 
+  export function formatKwanza(value: number): string {
+  if (typeof value !== "number") return "0,00 Kz";
+
+  return new Intl.NumberFormat("pt-AO", {
+    style: "currency",
+    currency: "AOA",
+  }).format(value);
+}
+
+
+
 
 

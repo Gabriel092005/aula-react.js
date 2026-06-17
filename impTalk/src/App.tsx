@@ -1,12 +1,13 @@
 import './App.css'
-import { Feed } from './page/feed'
+import { Home } from './page/Home'
+
 
 
 export function App() {
 
   return (
     <>
-        <Feed></Feed>
+        <Home></Home>
     </>
   )
 }
