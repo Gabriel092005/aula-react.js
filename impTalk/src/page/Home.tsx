@@ -61,7 +61,7 @@ export function Home(){
                        <CardContent className="flex">
                        <div className="flex flex-col">
                                    <strong className="tracking-tight text-2xl">{formatKwanza(2000)}</strong>
-                            <span className="text-[0.8rem]"><span className="text-green-500">+20%</span> em relação ao mês anterior</span>
+                            <span className="text-[0.8rem]"><span className="text-red-500">+20%</span> em relação ao mês anterior</span>
                        </div>
                        </CardContent>
                   </Card>

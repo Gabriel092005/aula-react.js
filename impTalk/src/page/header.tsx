@@ -3,7 +3,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { Separator } from "@/components/ui/separator";
 import { getInialts } from "@/components/ui/utill";
-import { ChevronDown, DollarSign, Mail, Pencil, Settings, User2} from "lucide-react";
+import { Bell, BellDot, ChevronDown, DollarSign, LogOutIcon, Mail, Pencil, Settings, User2} from "lucide-react";
 
 
   export function Header() {
@@ -54,7 +54,8 @@ import { ChevronDown, DollarSign, Mail, Pencil, Settings, User2} from "lucide-re
                    </div>
                       </DropdownMenuTrigger>
                       <DropdownMenuContent className="flex flex-col items-start">
-                         <DropdownMenuItem className="flex ">
+                         <div className="border-b-1 border-solid border-gray-300">
+                         <DropdownMenuItem className="flex p-2">
                                    <div className="flex justify-center items-center">
                                      <div>
                                         <Avatar>
@@ -67,11 +68,27 @@ import { ChevronDown, DollarSign, Mail, Pencil, Settings, User2} from "lucide-re
                                      </div>
                                   </div>
                          </DropdownMenuItem>
-                         {/* <DropdownMenuItem className="flex">
+                         </div>
+                            <DropdownMenuItem className="flex">
+                         <User2 className="ml-[7px]"></User2>
+                                     Meu perfil
+                         </DropdownMenuItem>
+                            <DropdownMenuItem className="flex ">
+                         <BellDot className="ml-[7px] text-yellow-500"></BellDot>
+                                     Notificações
+                         </DropdownMenuItem>
+                        <div className="w-full border-b-1 border-solid border-gray300">
+                         <DropdownMenuItem className="flex ">
                          <Separator orientation="horizontal"></Separator>
                                 <Settings size={12}></Settings>
                                 Configurações
-                         </DropdownMenuItem> */}
+                         </DropdownMenuItem>
+                         </div>
+                            <DropdownMenuItem className="flex">
+                         <LogOutIcon className="ml-[7px] text-red-600"></LogOutIcon>
+                                     Terminar secção
+                         </DropdownMenuItem>
+
                       </DropdownMenuContent>
                   </DropdownMenu>
 
