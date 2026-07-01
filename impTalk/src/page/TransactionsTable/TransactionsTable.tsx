@@ -11,6 +11,7 @@ export function TransactiosTable() {
           <TableHead>Nome</TableHead>
           <TableHead>Categoria</TableHead>
           <TableHead>Descrição</TableHead>
+          <TableHead>Quantidade</TableHead>          
           <TableHead className="text-right">Preço</TableHead>
           <TableHead className="text-center w-[100px]">Acção</TableHead>
         </TableRow>
@@ -20,9 +21,10 @@ export function TransactiosTable() {
           <TableCell className="p-5 font-medium">Arroz</TableCell>
           <TableCell>Mercearia</TableCell>
           <TableCell className="text-zinc-500">Lorem ipsum dolor sit</TableCell>
+          <TableCell className="text-zinc-500">5</TableCell>
           <TableCell className="text-right font-semibold">{formatKwanza(3400)}</TableCell>
           <TableCell>
-            <div className="flex items-center justify-center gap-1">
+            <div className="flex items-right justify-right gap-1">
               <Button variant="ghost" size="icon" className="h-8 w-8 text-zinc-500 hover:text-zinc-900">
                 <Edit2 size={14} />
               </Button>

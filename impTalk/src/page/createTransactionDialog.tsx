@@ -18,7 +18,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
                          <Input placeholder="Produto"></Input>
                          <Input placeholder="Categoria"></Input>
                          <Input placeholder="Descrição"></Input>
+                         <Input placeholder="Quantidade" type="number"></Input>
                          <Input placeholder="Preço"></Input>
+                    
+
                          <Select >
                                      <SelectTrigger  className="flex flex-1 w-full">
                                           <SelectValue placeholder='Selecione a transação...'></SelectValue>
